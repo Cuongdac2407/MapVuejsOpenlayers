@@ -1,0 +1,386 @@
+body {
+  overflow-x: hidden;
+}
+
+.btn-menu-list {
+  width: calc(100% / 3);
+  height: 40px;
+  color: #014f86;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #014f86;
+  transition: background-color 0.3s;
+}
+
+.container-content {
+  margin: 0;
+}
+
+.btn-menu-list:hover {
+  background-color: #ccc;
+}
+
+.btn-menu-list.active {
+  background-color: #014f86;
+  color: white;
+}
+
+
+
+.map-content-left {
+  position: sticky;
+  top: 90px;
+  height: 90%;
+  background-color: #f4f4f4;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+
+}
+
+.row-comment-header {
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.map-content-left::-webkit-scrollbar {
+  width: 0.001rem;
+}
+
+.map-content-left::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 0.5rem;
+}
+
+.comment-sidebar::-webkit-scrollbar {
+  width: 10.5rem;
+}
+
+.comment-sidebar ::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.feature-details::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.feature-details::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #888;
+}
+
+.map-content-right {
+  padding: 0;
+  height: 100vh;
+  width: 75%;
+  position: relative;
+  /* Positioning for the layer menu */
+}
+
+.layer-menu {
+  position: absolute;
+  padding-top: 515px;
+  padding-left: 10px;
+  z-index: 100;
+
+
+}
+
+.layer-options {
+  display: flex;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 190px;
+  height: 90px;
+  border-radius: 5px;
+  margin-left: 40px;
+  margin-top: -90px;
+}
+
+.layer-options button {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-left: 6px;
+
+}
+
+.layer-control-select-map,
+.layer-control-texterea,
+.layer-control-zoom-in,
+.layer-control-zoom-out {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  color: #014f86;
+  border: 1px solid #014f86;
+  border-radius: 5px;
+
+}
+
+.sidebars-menu-control {
+  position: absolute;
+  z-index: 101;
+  padding-left: 10px;
+  margin-top: 10px;
+
+}
+
+.btn-sidabars-menu-control {
+  width: 30px;
+  height: 30px;
+  color: #014f86;
+  border: 1px solid #014f86;
+  border-radius: 5px;
+}
+
+.map {
+  width: 112%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  background-color: lightgray !important;
+}
+
+.row-left {
+
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.btn-icon-tile-layer {
+  width: 30px;
+  height: 30px;
+  color: #014f86;
+  border: 1px solid #014f86;
+  border-radius: 5px;
+}
+
+.btn-menu-list-layers-osm {
+  border-radius: 10px;
+  background-image: url("../../image/bd-qhc.png");
+  background-repeat: no-repeat;
+}
+
+.btn-menu-list-layers-vetinh {
+  border-radius: 10px;
+  margin-left: 5px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../image/bd-qhc.png");
+  background-repeat: no-repeat;
+}
+
+.text-layers {
+  padding-top: 44px;
+  color: #014f86;
+  font-family: "Inter", sans-serif;
+}
+
+.layer-control-map {
+  width: 40px;
+}
+
+.layer-control-map .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.feature-details {
+  position: fixed;
+  top: 50px;
+  width: 25%;
+  /* Màu nền tùy chỉnh */
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  z-index: 105;
+  background-color: #f4f4f4;
+
+
+}
+
+.comment-sidebar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  min-width: 25%;
+  /* Chiều rộng tối thiểu */
+  background-color: #f4f4f4;
+  /* Màu nền tùy chỉnh */
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Scroll khi nội dung dài */
+
+  z-index: 105;
+}
+
+.header-features-sidebar {
+  display: flex;
+  height: 40px;
+  background-color: #888;
+  top: 0;
+
+
+}
+
+.header-comment-sidebar {
+
+  height: 40px;
+  background-color: #888;
+  top: 0;
+
+}
+
+.comment-sidebar-left {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid #014f86;
+  color: #014f86;
+
+
+  align-items: center;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 50px;
+  width: 25%;
+  z-index: 100;
+  overflow-y: hidden;
+  border-bottom: 1px solid #ddd;
+}
+
+.comment-sidebar-right {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  align-items: center;
+  border: 1px solid red;
+  color: red;
+}
+
+.features-sidebar-left {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+
+  border-radius: 50px;
+  border: 1px solid #014f86;
+  color: #014f86;
+  align-items: center;
+}
+
+.btn-features-left {
+  padding-top: 8px;
+  padding-left: 5px;
+}
+
+.comment-button-right {
+  padding-top: 8px;
+  display: flex;
+  justify-content: end;
+  padding-right: 5px;
+}
+
+.fixed-siderbar {
+  padding-top: 40px;
+}
+
+.btn-comment-sidebar-left {
+  padding-left: 5px;
+  padding-top: 7px;
+}
+
+.features-button-right {
+  padding-top: 7px;
+  display: flex;
+  justify-content: end;
+  padding-right: 5px;
+
+}
+
+.features-sidebar-right {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  align-items: center;
+  border: 1px solid red;
+  color: red;
+
+}
+
+.td-right {
+  padding-left: 5px;
+  padding-top: 11px;
+}
+
+.text-features-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: #014f86;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper-tr {
+
+  padding-left: 5px;
+  display: flex;
+
+
+}
+
+.text-comment-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+  color: #014f86;
+  font-family: "Inter", sans-serif;
+}
+
+
+.comment-node {
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.comment-node-left {
+  border: 1px solid;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  text-align: center;
+  color: #800080;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.comment-node-right {
+  font-size: 20px;
+
+
+}

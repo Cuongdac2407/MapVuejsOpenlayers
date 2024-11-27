@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Odibee+Sans&display=swap");
+
+
+
+body {
+  margin: 0;
+ 
+  padding: 0;
+  
+  background-image: url("../../image/nen-trang-xam-2.jpg");
+  background-size: cover;
+
+  background-repeat: no-repeat;
+
+ 
+  height: 100vh;
+ 
+}
+
+.container-wrapper {
+
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+
+
+}
+
+
+
+.text-header {
+  background-color: white;
+  padding: 8px;
+  /* Adds padding around the text */
+  color: #014f86;
+  font-family: "Inter", sans-serif;
+  height: 45px;
+  font-optical-sizing: auto;
+}
+
+.container-content-wrapper {
+  align-items: center;
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #888888;
+  height: 60px;
+}
+
+.nav-link-content {
+  display: flex;
+  width: 23%;
+  height: 45px;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+.nav-link{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.nav-text {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  color: #014f86;
+   align-items: center;
+  display: flex;
+  padding-left: 10px;
+  margin-top: 15px;
+  align-items: center;
+  width: 100%;
+
+}
+
+.nav-icon {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+
+}
+
+.icon-nav2 {
+  width: 40px;
+  height: 40px;
+}
+
+.form-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 0;
+}
+
+.link-item {
+  background-color: white;
+  color: #014f86;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  height: 80px;
+}
+
+.item-select {
+  width: 25%;
+  height: 33px;
+  border-radius: 10px;
+
+}
+
+.search {
+  position: relative;
+  display: flex;
+  
+  
+}
+.fa-solid{
+  position: absolute;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+.btn-search {
+  position: absolute;
+  
+}
+
+.item-select-search {
+  width: 49%;
+  height: 33px;
+  border-radius: 10px;
+
+}
+
+
+.link-item-bot {
+  width: 100%;
+  padding-right: 0;
+  padding-bottom: 8px;
+
+}
+
+.text-item-left {
+  align-items: center;
+  display: flex;
+  justify-content: end;
+}
+
+.item-select {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-item-top {
+  display: flex;
+  padding-top: 0px;
+
+}
+
+.text-item-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.information {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: "Inter", sans-serif;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  padding-top: 10px;
+  font-optical-sizing: auto;
+  text-align: center;
+}
+
+.information-a {
+  color: #014f86;
+  font-family: "Inter", sans-serif;
+  align-items: center;
+}
+
+.content-link {
+  background-color: #ffffff;
+  width: 80%;
+  height: 100px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.content {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  
+}
+
+.content-link-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+ 
+  color: #014f86;
+}
